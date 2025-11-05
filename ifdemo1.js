@@ -6,8 +6,18 @@
     }, n[i].p = e; n[i].c = co;
     var r = t.createElement("script"); r.async = !0, r.src = a + "?a=" + e;
     var c = t.getElementsByTagName("script")[0]; c.parentNode.insertBefore(r, c)
-  })(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-Z57KBTR9DEZC-2");
-  
+  })(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-Z57KBTR9DEZC-2", {"enableIdentifyFromIFrame":true});
+  aptrinsic("identify",
+            {
+              id: iframeUser1,
+              email: ifuser1@gmail.com,
+              "firstName": "Test iframe"
+            },
+            {
+              id:"acc1",
+              name:"accountIframe",
+            });
+ aptrinsic('set', 'globalContext', {"package": "elite"});
   
   
   
