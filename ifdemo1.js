@@ -32,7 +32,9 @@ function login() {
               name:"AmazonNew",
              
 
-            });
+            })}
+        alert("Your Unique Id is : " + " " + userid);
+        location = "index.html"
         }
             
   aptrinsic("identify",
