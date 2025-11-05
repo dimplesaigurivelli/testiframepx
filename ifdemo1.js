@@ -153,7 +153,16 @@ function login() {
     }
   }
 
+function message() {
+  var email = document.getElementById('email');
+  if (email.value === '') {
+  }
+  else {
+    alert("Details saved succesfully!");
+    aptrinsic('track', 'userDetails', {"version" :111,"Submitted" : true}); 
 
+  }
+}
 
 
 
