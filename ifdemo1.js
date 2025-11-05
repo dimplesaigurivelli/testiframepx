@@ -7,6 +7,34 @@
     var r = t.createElement("script"); r.async = !0, r.src = a + "?a=" + e;
     var c = t.getElementsByTagName("script")[0]; c.parentNode.insertBefore(r, c)
   })(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-Z57KBTR9DEZC-2", {"enableIdentifyFromIFrame":true});
+
+function login() {
+  var a = document.getElementById('UserEmail').value;
+  
+
+  const accounts = ["1001", "1002", "1003", "1004", "1005","1006"];
+  const mailId = ["iframeLogin@gmail.com"];
+
+  for (var i = 0; i < accounts.length; i++) {
+    if (a == mailId[i]) {
+        var userid = mailId[i].substring(4, 9);
+        if (a == "iframeLogin@gmail.com") {
+          
+          aptrinsic("identify",
+            {
+              id: userid,
+              email: a,
+              "firstName": "iframeLogin"
+            },
+            
+            {
+              id:"1009",
+              name:"AmazonNew",
+             
+
+            });
+        }
+            
   aptrinsic("identify",
             {
               id: iframeUser1,
