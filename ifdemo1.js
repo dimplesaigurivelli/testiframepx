@@ -13,18 +13,18 @@ function login() {
   
 
   const accounts = ["1001", "1002", "1003", "1004", "1005","1006"];
-  const mailId = ["iframeLogin@gmail.com"];
+  const mailId = ["ifdimple@gmail.com", "ifmonica@gmail.com", "ifchandler@gmail.com", "ifross@gmail.com", "ifphoebe@gmail.com","ifdimple23@gmail.com","ifdimplesaig@gmail.com"];
 
   for (var i = 0; i < accounts.length; i++) {
     if (a == mailId[i]) {
         var userid = mailId[i].substring(4, 9);
-        if (a == "iframeLogin@gmail.com") {
+        if (a == "ifdimple@gmail.com") {
           
           aptrinsic("identify",
             {
               id: userid,
               email: a,
-              "firstName": "iframeLogin"
+              "firstName": "dimple"
             },
             
             {
@@ -32,22 +32,131 @@ function login() {
               name:"AmazonNew",
              
 
-            })}
-        alert("Your Unique Id is : " + " " + userid);
-        location = "index.html"
-        }
-            
-  aptrinsic("identify",
-            {
-              id: iframeUser1,
-              email: ifuser1@gmail.com,
-              "firstName": "Test iframe"
-            },
-            {
-              id:"acc1",
-              name:"accountIframe",
             });
- aptrinsic('set', 'globalContext', {"package": "elite"});
+
+            aptrinsic('set', 'globalContext', {"package": "elite"});
+
+        }
+
+       
+        else if (a == "ifmonica@gmail.com") {
+         
+          aptrinsic("identify",
+            {
+              id: userid,
+              email: a,
+              "firstName": "monica"
+            },
+            
+            {
+              id:"1002",
+              name:"Cadbury",
+          
+            });
+            aptrinsic('set', 'globalContext', {"package": "elite"});
+
+        }
+        else if (a == "ifchandler@gmail.com") {
+         
+          aptrinsic("identify",
+            {
+              id: userid,
+              email: a,
+              "firstName":"chandler"
+            },
+            
+            {
+              id:"1003",
+              name:"Microsoft",
+             
+            });
+            aptrinsic('set', 'globalContext', {"package": "premier"});
+
+        }
+        else if (a == "ifross@gmail.com") {
+          
+          aptrinsic("identify",
+            {
+              id: userid,
+              email: a,
+              "firstName":"ross"
+            },
+            
+            {
+              id:"1004",
+              name:"Myntra",
+            
+            });
+            aptrinsic('set', 'globalContext', {"package": "standard"});
+
+        }
+        else if (a == "ifphoebe@gmail.com") {
+         
+          aptrinsic("identify",
+            {
+              id: userid,
+              email: a,
+              "firstName":"phoebe"
+            },
+
+            {
+              id:"1005",
+              name:"Tata",
+             
+            }
+            );
+            aptrinsic('set', 'globalContext', {"package": "standard"});
+
+        }
+ else if (a == "ifdimple23@gmail.com") {
+          
+          aptrinsic("identify",
+            {
+              id: userid,
+              email: a,
+              "firstName":"dimple"
+            },
+
+            {
+              id:"1123",
+              name:"Sony",
+             
+            }
+            );
+            aptrinsic('set', 'globalContext', {"package": "standard"});
+
+        }
+
+        else if (a == "ifdimplesaig@gmail.com") {
+          
+          aptrinsic("identify",
+            {
+              id: userid,
+              email: a,
+              "firstName":"dimplesai"
+            },
+
+            {
+              id:"1006",
+              name:"Apple",
+             
+            }
+            );
+            aptrinsic('set', 'globalContext', {"package": "standard"});
+
+        }
+        alert("Your iframe Unique Id is : " + " " + userid);
+        location = "index.html"
+      }
+
+    
+    }
+  }
+
+
+
+
+
   
   
   
