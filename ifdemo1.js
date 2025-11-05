@@ -374,10 +374,9 @@ function login() {
               aptrinsic('set', 'globalContext', {"package": "standard"});
   
           }
-          alert("Your Unique Id is : " + " " + userid);
-          location = "index.html"
+          alert("Your iframe Id is : " + " " + userid);
+          location = "ifdemo.html"
         }
-  
       
       }
     }
