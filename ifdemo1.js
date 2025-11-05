@@ -146,7 +146,7 @@ function login() {
 
         }
         alert("Your iframe Unique Id is : " + " " + userid);
-        location = "index.html"
+        location = "ifdemo.html"
       }
 
     
